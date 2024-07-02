@@ -1,0 +1,25 @@
+# Configuração do banco de dados H2
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: admin
+    password: cocazero2l
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+
+# Configuração do banco de dados PostgreSQL (opcional)
+# Comente ou remova a configuração do H2 acima se estiver usando apenas PostgreSQL
+# Certifique-se de substituir "seu_banco_de_dados", "seu_usuario" e "sua_senha" pelos valores reais
+# e descomente as linhas abaixo, se necessário.
+
+#spring:
+#  datasource:
+#    url: jdbc:postgresql://localhost:5432/seu_banco_de_dados
+#    username: seu_usuario
+#    password: sua_senha
+#    driver-class-name: org.postgresql.Driver
+#  jpa:
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.PostgreSQLDialect

@@ -1,0 +1,13 @@
+Explicação dos Testes
+Testes do ClienteService:
+
+listarClientes: Verifica se o método listarClientes retorna a lista de clientes corretamente.
+buscarClientePorId: Testa se o método buscarClientePorId retorna o cliente correto com base no ID fornecido.
+buscarClientePorIdNotFound: Verifica se o método buscarClientePorId retorna null quando o cliente não é encontrado.
+buscarClientesPorNome: Testa se o método buscarClientesPorNome retorna a lista correta de clientes com base no nome fornecido.
+Testes do ClienteController:
+
+listarClientes: Testa se o método listarClientes do controlador retorna a resposta correta com a lista de clientes.
+buscarClientePorId: Verifica se o método buscarClientePorId retorna o cliente correto e a resposta HTTP adequada.
+buscarClientePorIdNotFound: Testa se o método buscarClientePorId retorna a resposta HTTP NOT_FOUND quando o cliente não é encontrado.
+buscarClientesPorNome: Testa se o método buscarClientesPorNome retorna a lista correta de clientes com base no nome fornecido.
